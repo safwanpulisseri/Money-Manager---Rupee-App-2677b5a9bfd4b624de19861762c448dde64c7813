@@ -5,7 +5,7 @@ class ScreenAboutUs extends StatelessWidget {
   const ScreenAboutUs({super.key});
 // Function to launch email on tap
   Future<void> launchEmail() async {
-    const String emailAddress = 'safwanpulisseri123@gmain.com';
+    const String emailAddress = 'safwanpulisseri123@gmail.com';
     const String emailSubject = 'Question/Feedback';
     const String emailBody = 'Your_feedback_here';
 
@@ -81,7 +81,7 @@ class ScreenAboutUs extends StatelessWidget {
                     launchEmail(); // Launch email on tap
                   },
                   child: const Text(
-                    'safwanpulisseri123@gmain.com', // Text to act as a link
+                    'safwanpulisseri123@gmail.com', // Text to act as a link
                     style: TextStyle(
                       color: Colors.blue,
                       decoration: TextDecoration.underline,

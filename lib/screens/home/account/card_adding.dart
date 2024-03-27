@@ -121,7 +121,7 @@ class _ScreenAddingCardsState extends State<ScreenAddingCards> {
                             hintText: 'Card Number',
                             prefixIcon: Padding(
                               padding: const EdgeInsets.symmetric(vertical: 10),
-                              child: SvgPicture.asset('assets/credit-card.svg'),
+                              child: SvgPicture.asset('assets/credit_card.svg'),
                             ),
                           ),
                         ),
