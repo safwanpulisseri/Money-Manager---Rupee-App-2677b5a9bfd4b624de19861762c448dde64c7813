@@ -430,18 +430,6 @@ class _ScreenStatisticsState extends State<ScreenStatistics> {
                                         ),
                                         subtitle: Text(
                                             '${date.day}/${date.month}/${date.year}'),
-                                        // leading: CircleAvatar(
-                                        //   backgroundColor: Colors.transparent,
-                                        //   radius: 30,
-                                        //   child: ClipOval(
-                                        //     // child: Image.asset(
-                                        //     //     // category.categoryImagePath,
-                                        //     //     // height: 100,
-                                        //     //     // width: 100,
-                                        //     //     // fit: BoxFit.cover,
-                                        //     //     ),
-                                        //   ),
-                                        // ),
                                         trailing: Row(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [

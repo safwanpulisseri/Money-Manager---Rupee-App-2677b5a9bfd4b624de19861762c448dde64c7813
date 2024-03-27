@@ -1,3 +1,5 @@
+import 'package:curved_labeled_navigation_bar/curved_navigation_bar.dart';
+import 'package:curved_labeled_navigation_bar/curved_navigation_bar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:rupee_app/screens/add_category/main_adding.dart';
 import 'package:rupee_app/screens/home/screen_home.dart';
@@ -48,54 +50,54 @@ class _ScreenMainHomeState extends State<ScreenMainHome> {
           ),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        // bottomNavigationBar: CurvedNavigationBar(
-        //   index: val,
-        //   animationDuration: const Duration(milliseconds: 200),
-        //   backgroundColor: Colors.white,
-        //   color: Colors.orange,
-        //   items: const [
-        //     CurvedNavigationBarItem(
-        //         child: Icon(
-        //           Icons.home,
-        //         ),
-        //         label: 'Home'),
-        //     CurvedNavigationBarItem(
-        //         child: Icon(
-        //           Icons.bar_chart_rounded,
-        //         ),
-        //         label: 'Statistics'),
-        //   ],
-        //   onTap: (index) {
-        //     setState(() {
-        //       val = index;
-        //     });
-        //   },
-        // ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _selectedIndex,
-          backgroundColor: Colors.orange,
+        bottomNavigationBar: CurvedNavigationBar(
+          index: _selectedIndex,
+          animationDuration: const Duration(milliseconds: 200),
+          backgroundColor: Colors.white,
+          color: Colors.orange,
+          items: const [
+            CurvedNavigationBarItem(
+                child: Icon(
+                  Icons.home,
+                ),
+                label: 'Home'),
+            CurvedNavigationBarItem(
+                child: Icon(
+                  Icons.bar_chart_rounded,
+                ),
+                label: 'Statistics'),
+          ],
           onTap: (index) {
             setState(() {
               _selectedIndex = index;
             });
           },
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                color: Colors.black,
-              ),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.bar_chart_rounded,
-                color: Colors.black,
-              ),
-              label: 'Statistics',
-            ),
-          ],
         ),
+        // bottomNavigationBar: BottomNavigationBar(
+        //   currentIndex: _selectedIndex,
+        //   backgroundColor: Colors.orange,
+        //   onTap: (index) {
+        //     setState(() {
+        //       _selectedIndex = index;
+        //     });
+        //   },
+        //   items: const [
+        //     BottomNavigationBarItem(
+        //       icon: Icon(
+        //         Icons.home,
+        //         color: Colors.black,
+        //       ),
+        //       label: 'Home',
+        //     ),
+        //     BottomNavigationBarItem(
+        //       icon: Icon(
+        //         Icons.bar_chart_rounded,
+        //         color: Colors.black,
+        //       ),
+        //       label: 'Statistics',
+        //     ),
+        //   ],
+        // ),
       ),
     );
   }

@@ -76,17 +76,6 @@ class TransactionListWidget extends StatelessWidget {
                   ),
                 ),
                 subtitle: Text('${date.day}/${date.month}/${date.year}'),
-                // leading: CircleAvatar(
-                //   backgroundColor: Colors.transparent,
-                //   radius: 30,
-                //   child: ClipOval(
-                //     child: Image.asset(
-                //      // category.categoryImagePath,
-                //       fit: BoxFit.cover,
-                //     ),
-                //   ),
-                // ),
-
                 trailing: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
