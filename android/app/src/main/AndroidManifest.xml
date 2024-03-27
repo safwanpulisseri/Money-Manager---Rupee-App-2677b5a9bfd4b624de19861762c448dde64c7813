@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="in.brototype.rupee_app">
     <application
         android:enableOnBackInvokedCallback="true"
         android:label="rupee_app"
